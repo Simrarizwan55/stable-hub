@@ -2,7 +2,7 @@ class User {
   final String id;
   final String name;
   final String email;
-  final String phone;
+  final String? phone;
   final String country;
 
   User({
