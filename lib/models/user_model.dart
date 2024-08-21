@@ -14,14 +14,12 @@ class User {
   });
 
   factory User.fromMap(Map<String, dynamic> map) {
-    print(map);
-    print(map["phone"]);
     return User(
-      id: map["_id"],
-      name: map["fullName"],
-      email: map["email"],
-      phone: map["phone"],
-      country: map["country"],
+      id: map["_id"] as String,
+      name: map["fullName"] as String,
+      email: map["email"] as String,
+      phone: map["phone"] as String,
+      country: map["country"] as String,
     );
   }
 }
