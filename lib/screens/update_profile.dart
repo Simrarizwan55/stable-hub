@@ -26,7 +26,7 @@ class _UpdateProfileState extends State<UpdateProfile> {
     AuthProvider provider = context.read<AuthProvider>();
     if (provider.user != null) {
       _fullNameController.text = provider.user!.name ?? '';
-      _phoneController.text = provider.user!.phone ?? '';
+      _phoneController.text = provider.user!.phoneNo ?? '';
     }
   }
 
